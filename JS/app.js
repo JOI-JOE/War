@@ -33,3 +33,4 @@ function slideWord() {
 
 slideWord();
 // hau sieu cap dep trai
+// hau dep trai
