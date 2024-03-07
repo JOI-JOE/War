@@ -34,3 +34,6 @@ function slideWord() {
 slideWord();
 // hau sieu cap dep trai
 // hau dep trai
+// ngo dang hau
+// le thu hang
+// cl;làkljaskllfjasklfjklasjfkl
