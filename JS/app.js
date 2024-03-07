@@ -32,3 +32,4 @@ function slideWord() {
 }
 
 slideWord();
+// hau sieu cap dep trai
