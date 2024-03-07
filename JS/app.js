@@ -1,4 +1,3 @@
-const box = document.querySelector(".container");
 const game = ["Demon Soul", "Dark Soul", "Elden Ring", "Sekiro"];
 const brand = [
   "FromsorftWare",
@@ -7,28 +6,39 @@ const brand = [
   "Nintentdo",
   "Xbox",
 ];
-let y = 0;
-let x = 0;
 
-function Shuffle(array) {
-  const list = [...array];
-  for (let i = list.length - 1; i > 0; i--) {
-    const ChooseRandom = Math.floor(Math.random() * (i + 1));
-    const index = list[i];
+// function slideWord() {
+//   box.innerHTML = `
+//     <h1>
+//       Game Of The Year is ${game} <br>
+//       Developer :   ${brand}
+//     </h1>
+//     `;
+// }
+// slideWord();
 
-    list[i] = list[ChooseRandom];
-    list[ChooseRandom] = index;
-  }
-  return list;
+function show() {
+  const brands = [
+    "FromsorftWare",
+    "Naughty Dogs",
+    "Cherry Team",
+    "Nintentdo",
+    "Xbox",
+  ];
+  let box = document.querySelector(".myFavorite");
+  box.insertAdjacentHTML(
+    "beforeend",
+
+    `<div class="board">
+      ${brands
+        .map(
+          (brand) =>
+            `<h1>
+        ${brand}
+            </h1>`
+        )
+        .join("")}
+      </div>`
+  );
 }
-
-// console.log(Shuffle([...game, ...brand]));
-function slideWord() {
-  box.innerHTML = `
-    <h1>
-      Game Of The Year is  ${Shuffle([...game, ...brand])}
-    </h1>
-    `;
-}
-
-slideWord();
+show();
