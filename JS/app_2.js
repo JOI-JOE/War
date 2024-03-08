@@ -1,5 +1,0 @@
-/*
-
-
-ngo dang hau sieu cap dep trai
-*/
