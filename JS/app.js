@@ -37,7 +37,7 @@ function show() {
         ${brand}
             </h1>`
         )
-        .join("")}
+        .join("ngo dang hau")}
       </div>`
   );
 }
